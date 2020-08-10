@@ -1,0 +1,110 @@
+Name        : Jessup Alcott
+Age         : 41
+Rank        : Senior
+Major       : Astronomy
+Overall GPA : 2.80
+Course      : ASTR100	, CourseGPA: 3.2
+Course      : CSC143	, CourseGPA: 2.2
+Course      : PHYS222	, CourseGPA: 3.0
+Deans List  : NO
+On Probation: NO
+
+Name        : Winter Bourne
+Age         : 27
+Rank        : Freshman
+Major       : Computer Science
+Overall GPA : 2.77
+Course      : CSC143	, CourseGPA: 2.8
+Course      : ENG214	, CourseGPA: 2.5
+Course      : MATH163	, CourseGPA: 3.0
+Deans List  : NO
+On Probation: NO
+
+Name        : Travis Conley
+Age         : 33
+Rank        : Junior
+Major       : Computer Science
+Overall GPA : 3.17
+Course      : CSC143	, CourseGPA: 2.1
+Course      : ENG214	, CourseGPA: 3.6
+Course      : PHYS222	, CourseGPA: 3.8
+Deans List  : NO
+On Probation: NO
+
+Name        : Holden Flack
+Age         : 29
+Rank        : Junior
+Major       : Computer Science
+Overall GPA : 3.50
+Course      : ENG214	, CourseGPA: 3.8
+Course      : MATH163	, CourseGPA: 3.6
+Course      : PHYS222	, CourseGPA: 3.1
+Deans List  : NO
+On Probation: NO
+
+Name        : Luke Hogan
+Age         : 27
+Rank        : Sophomore
+Major       : Computer Science
+Overall GPA : 3.00
+Course      : ENG214	, CourseGPA: 3.5
+Course      : MATH163	, CourseGPA: 2.3
+Course      : PHYS222	, CourseGPA: 3.2
+Deans List  : NO
+On Probation: NO
+
+Name        : Jessica Lemon
+Age         : 31
+Rank        : Senior
+Major       : Computer Science
+Overall GPA : 3.53
+Course      : CSC143	, CourseGPA: 3.5
+Course      : ENG214	, CourseGPA: 3.2
+Course      : MATH163	, CourseGPA: 3.9
+Deans List  : NO
+On Probation: NO
+
+Name        : Samuel Mitty
+Age         : 27
+Rank        : Junior
+Major       : Engineering
+Overall GPA : 3.20
+Course      : CSC143	, CourseGPA: 2.5
+Course      : MATH163	, CourseGPA: 3.6
+Course      : PHYS222	, CourseGPA: 3.5
+Deans List  : NO
+On Probation: NO
+
+Name        : Nevil Pier
+Age         : 33
+Rank        : Junior
+Major       : Physics
+Overall GPA : 3.13
+Course      : ENG214	, CourseGPA: 3.2
+Course      : MATH163	, CourseGPA: 3.4
+Course      : PHYS222	, CourseGPA: 2.8
+Deans List  : NO
+On Probation: NO
+
+Name        : Martin Salamander
+Age         : 27
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.53
+Course      : ENG214	, CourseGPA: 1.4
+Course      : MATH163	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.5
+Deans List  : NO
+On Probation: YES
+
+Name        : Michael Wang
+Age         : 36
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.67
+Course      : CSC143	, CourseGPA: 1.9
+Course      : ENG214	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.4
+Deans List  : NO
+On Probation: YES
+

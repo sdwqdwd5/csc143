@@ -1,0 +1,99 @@
+Name        : Michelle Cordero
+Age         : 21
+Rank        : Sophomore
+Major       : Physics
+Overall GPA : 2.10
+Course      : CSC143	, CourseGPA: 2.2
+Course      : MATH163	, CourseGPA: 2.4
+Course      : PHYS222	, CourseGPA: 1.7
+Deans List  : NO
+On Probation: NO
+
+Name        : Wilbur Grant
+Age         : 21
+Rank        : Sophomore
+Major       : Computer Science
+Overall GPA : 3.77
+Course      : ENG214	, CourseGPA: 3.6
+Course      : MATH163	, CourseGPA: 4.0
+Course      : PHYS222	, CourseGPA: 3.7
+Deans List  : YES
+On Probation: NO
+
+Name        : Luke Hogan
+Age         : 27
+Rank        : Sophomore
+Major       : Computer Science
+Overall GPA : 3.00
+Course      : ENG214	, CourseGPA: 3.5
+Course      : MATH163	, CourseGPA: 2.3
+Course      : PHYS222	, CourseGPA: 3.2
+Deans List  : NO
+On Probation: NO
+
+Name        : Charles Lee
+Age         : 20
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 3.20
+Course      : ENG214	, CourseGPA: 3.4
+Course      : MATH163	, CourseGPA: 2.7
+Course      : PHYS222	, CourseGPA: 3.5
+Deans List  : NO
+On Probation: NO
+
+Name        : Jared Peters
+Age         : 21
+Rank        : Sophomore
+Major       : Physics
+Overall GPA : 1.53
+Course      : CSC143	, CourseGPA: 1.5
+Course      : MATH163	, CourseGPA: 1.4
+Course      : PHYS222	, CourseGPA: 1.7
+Deans List  : NO
+On Probation: YES
+
+Name        : Martin Salamander
+Age         : 27
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.53
+Course      : ENG214	, CourseGPA: 1.4
+Course      : MATH163	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.5
+Deans List  : NO
+On Probation: YES
+
+Name        : Michael Wang
+Age         : 36
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.67
+Course      : CSC143	, CourseGPA: 1.9
+Course      : ENG214	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.4
+Deans List  : NO
+On Probation: YES
+
+Name        : Michael Wang
+Age         : 19
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 2.90
+Course      : ENG214	, CourseGPA: 2.9
+Course      : MATH163	, CourseGPA: 3.0
+Course      : PHYS222	, CourseGPA: 2.8
+Deans List  : NO
+On Probation: NO
+
+Name        : Carter West
+Age         : 19
+Rank        : Sophomore
+Major       : Computer Science
+Overall GPA : 3.23
+Course      : ENG214	, CourseGPA: 3.3
+Course      : MATH163	, CourseGPA: 3.0
+Course      : PHYS222	, CourseGPA: 3.4
+Deans List  : NO
+On Probation: NO
+

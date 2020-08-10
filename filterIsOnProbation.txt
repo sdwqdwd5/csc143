@@ -1,0 +1,33 @@
+Name        : Jared Peters
+Age         : 21
+Rank        : Sophomore
+Major       : Physics
+Overall GPA : 1.53
+Course      : CSC143	, CourseGPA: 1.5
+Course      : MATH163	, CourseGPA: 1.4
+Course      : PHYS222	, CourseGPA: 1.7
+Deans List  : NO
+On Probation: YES
+
+Name        : Martin Salamander
+Age         : 27
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.53
+Course      : ENG214	, CourseGPA: 1.4
+Course      : MATH163	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.5
+Deans List  : NO
+On Probation: YES
+
+Name        : Michael Wang
+Age         : 36
+Rank        : Sophomore
+Major       : Engineering
+Overall GPA : 1.67
+Course      : CSC143	, CourseGPA: 1.9
+Course      : ENG214	, CourseGPA: 1.7
+Course      : PHYS222	, CourseGPA: 1.4
+Deans List  : NO
+On Probation: YES
+

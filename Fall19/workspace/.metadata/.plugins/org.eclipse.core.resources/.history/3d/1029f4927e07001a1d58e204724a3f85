@@ -1,0 +1,296 @@
+package lists;
+
+import java.util.NoSuchElementException;
+
+import utility.Iterator;
+import utility.List;
+
+public class LinkedList<E> {
+	private Node<E> first;
+	private Node<E> last;
+	private int size;
+	
+	public LinkedList() {
+		first = null;
+		last = null;
+		size = 0;
+	}
+	
+	public LinkedList(List<E> other) {
+		size  = other.size();
+		if (size > 2) {
+		Node<E> current = new Node<E>(first,null,other.get(1));
+		first = new Node<E>(null,current,other.get(0));
+		for (int i = 1; i < size-1; i++) {
+			Node<E> second = new Node<E>(current,null,other.get(i+1));
+			current.next = second;
+			current 	 = second;
+		}
+			last = current;
+			size  = other.size();
+		}else if (size == 2) {
+			first = new Node<E>(null,last,other.get(0));
+			last  = new Node<E>(first,null,other.get(1));
+			size  = other.size();
+		}else if (size == 1) {
+			first = new Node<E>(null,null,other.get(0));
+		}else {
+			first = null;
+			last  = null;
+			size  = 0;
+		}	
+	}
+	
+	public boolean add(E element) {
+		int oldSize = size;
+		Node<E> oldLastNode = last;
+		Node<E> newLastNode = new Node<E>(oldLastNode,null,element);
+		last = newLastNode;
+		if(oldLastNode ==null ) {
+			first = newLastNode;
+		}else {
+			oldLastNode.next = newLastNode;
+		}
+		size++;
+		return oldSize +1 == size;
+	}
+	
+	public void add(int index,E element) {
+		linkBefore(index,element);	
+	}
+	
+	private void checkIndex(int index) {
+		if (index > size-1 || index < 0) {
+			throw new IndexOutOfBoundsException();
+		}
+	}
+	
+	public void clear() {
+		first = null;
+		last  = null; 
+		size  = 0;
+	}
+	
+	public boolean contains(E element) {
+		Node<E> current = first.next;
+		if (first.data.equals(element) ||
+			last.data.equals(element) ) {
+			return true;
+		}
+		while (current != null) {
+			if (current.data.equals(element)) {
+				return true;
+			}
+			current = current.next;
+		}
+		return false;
+	}
+	
+	public E get(int index) {
+		return (node(index)).data;
+	}
+	
+	public int indexOf(E element) {
+		
+		if (first.data.equals(element)) {
+			return 0;
+		}else if (last.data.equals(element)) {
+			return size-1;
+		}
+		Node<E> current = first.next;
+		for (int i = 1; i < size-1; i++) {
+			if (current.data.equals(element)) {
+				return i;
+			}
+			current = current.next;
+		}
+		return -1;
+	}
+	
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	
+	public Iterator<E> iterator(){
+		return new LinkedIterator();
+	}
+	
+	private void linkBefore(int index, E element) {
+		
+		Node<E> current;
+		Node<E> newOne = null;
+		if (size != 0) {
+			if (index == size) {
+				newOne = new Node<E>(last,null, element);
+				last.next = newOne;
+				last 	  = newOne;
+			}else if (index == 0) {
+				newOne = new Node<E>(null,first,element);
+				first.prev = newOne;
+				first 	   = newOne;
+			}else {
+				current = node(index);
+				newOne  = new Node<E>(current.prev,current,element);
+			    current.prev.next = newOne;
+			    current.prev      = newOne;
+			}
+		}else {
+			if (index == 0) {
+			Node<E> oldLastNode = last;
+			Node<E> newLastNode = new Node<E>(oldLastNode,null,element);
+			last = newLastNode;
+			if(oldLastNode ==null ) {
+				first = newLastNode;
+			}else {
+				oldLastNode.next = newLastNode;
+			}
+			}else {
+				throw new IndexOutOfBoundsException();
+			}
+		}
+		size++;
+	}
+	
+	private Node<E> node(int index) {
+		checkIndex(index);
+		if (index == 0) {
+			return first;
+		}else if (index == size-1) {
+			return last ;
+		}else if (index == 1) {
+			return first.next;
+		}
+		Node<E> current = first.next;
+		for (int i = 1; i < index; i++) {
+			current = current.next;
+		}
+		return current;
+	}
+	
+	public E peek() {
+		if (first != null) {
+			return first.data;
+		}
+		throw new NoSuchElementException();
+	}
+	
+	public E remove() {
+		if (first != null) {
+			E element = unlink(0);
+			if ( element!= null) {
+				return element;
+			}
+		}
+		throw new NoSuchElementException();
+	}
+
+	public E remove(int index) {
+		return unlink(index);
+	}
+	
+	public boolean remove(E element) {
+		Node<E> current = first;
+		for (int i = 0; i < size ; i++) {
+			if (current.data.equals(element)) {
+				unlink(i);
+				return true;
+			}
+			current = current.next;
+		}
+		throw new NoSuchElementException();	
+	}
+	
+	public E set(int index, E element) {
+		E data = node(index).data;
+		node(index).data = element;
+		return data;
+	}
+	
+	public int size() {
+		return size; 
+	}
+	
+	public String toString() {
+		if (first == null) {
+			return "[]";
+		}
+		String result = "[ " + first.data;
+		Node<E> current = first.next;
+		while (current != null) {
+			result += ", " + current.data;
+			current = current.next;	
+		}
+		result += " ]";
+		return result;
+	}
+	
+	private E unlink(int index) {
+		Node<E> current = node(index);
+		E element = current.data;
+		if (size != 1) {
+			if (index == 0) {
+				current.next.prev = null;
+				first = current.next;
+			}else if (index == size-1) {
+				current.prev.next = null;
+				last = current.prev;
+			}else {
+			current.prev.next = current.next;
+			current.next.prev = current.prev;
+			}
+		}else {
+			first = null;
+			last  = null;
+		}
+		current.data = null;
+		size--;
+		return element;
+	}
+	private static class Node<E>{
+		private E data;
+		private Node<E> next;
+		private Node<E> prev;
+		
+		private Node(Node<E> prev, Node<E> next, E data) {
+			this.prev = prev;
+			this.next = next;
+			this.data = data;
+		}
+	}
+
+	private class LinkedIterator implements Iterator<E>{
+		private Node<E> current;
+		private int index;
+		private boolean isRemovable;
+		
+		public LinkedIterator() {
+			this.current     = first;
+			this.index   	 = 0;
+			this.isRemovable = false;	
+		}
+		
+		public boolean hasNext() {
+			return index < size;
+		}
+		
+		public E next() {
+			if (! hasNext()) {
+				throw new NoSuchElementException();
+			}
+			E element 		 = current.data;
+			this.isRemovable = true;
+			current 		 = current.next;
+			index ++;
+			return element;
+		}
+		
+		public void remove() {
+			if (! isRemovable) {
+				throw new IllegalStateException();
+			}
+			LinkedList.this.remove(--index);
+			isRemovable = false;
+		}
+	}
+}
+ 

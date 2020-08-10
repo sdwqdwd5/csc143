@@ -1,0 +1,11 @@
+Name        : Wilbur Grant
+Age         : 21
+Rank        : Sophomore
+Major       : Computer Science
+Overall GPA : 3.77
+Course      : ENG214	, CourseGPA: 3.6
+Course      : MATH163	, CourseGPA: 4.0
+Course      : PHYS222	, CourseGPA: 3.7
+Deans List  : YES
+On Probation: NO
+

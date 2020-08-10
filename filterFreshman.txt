@@ -1,0 +1,55 @@
+Name        : Finnegan Bean
+Age         : 24
+Rank        : Freshman
+Major       : Computer Science
+Overall GPA : 3.30
+Course      : CSC143	, CourseGPA: 3.1
+Course      : ENG214	, CourseGPA: 3.5
+Course      : PHYS222	, CourseGPA: 3.3
+Deans List  : NO
+On Probation: NO
+
+Name        : Winter Bourne
+Age         : 27
+Rank        : Freshman
+Major       : Computer Science
+Overall GPA : 2.77
+Course      : CSC143	, CourseGPA: 2.8
+Course      : ENG214	, CourseGPA: 2.5
+Course      : MATH163	, CourseGPA: 3.0
+Deans List  : NO
+On Probation: NO
+
+Name        : Phillip Chan
+Age         : 19
+Rank        : Freshman
+Major       : Computer Science
+Overall GPA : 3.17
+Course      : CSC143	, CourseGPA: 2.1
+Course      : ENG214	, CourseGPA: 3.6
+Course      : PHYS222	, CourseGPA: 3.8
+Deans List  : NO
+On Probation: NO
+
+Name        : Walter Mitty
+Age         : 20
+Rank        : Freshman
+Major       : Engineering
+Overall GPA : 3.20
+Course      : CSC143	, CourseGPA: 2.5
+Course      : MATH163	, CourseGPA: 3.6
+Course      : PHYS222	, CourseGPA: 3.5
+Deans List  : NO
+On Probation: NO
+
+Name        : William Sanchez
+Age         : 19
+Rank        : Freshman
+Major       : Computer Science
+Overall GPA : 3.00
+Course      : ENG214	, CourseGPA: 3.5
+Course      : MATH163	, CourseGPA: 2.3
+Course      : PHYS222	, CourseGPA: 3.2
+Deans List  : NO
+On Probation: NO
+

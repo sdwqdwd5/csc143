@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 packages to &apos;L1_HierarchyLab/src&apos;&#x0A;- Original project: &apos;L2_GenericX&apos;&#x0A;- Destination element: &apos;L1_HierarchyLab/src&apos;&#x0A;- Original elements:&#x0A;     L2_GenericX/src/college&#x0A;     L2_GenericX/src/shapes&#x0A;- Update references to refactored element" description="Move packages" destination="=L1_HierarchyLab/src" element1="/src&lt;college" element2="/src&lt;shapes" flags="589830" fragments="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1572041118634" version="1.0"/>
+</session>
